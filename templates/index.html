@@ -70,48 +70,40 @@
                                     </div>
                                     <div class="modal-body">
                                         <form action="{{url_for('insert')}}" method="POST">
-                                            <div class="row">
-                                                <div class="form-group col">
-                                                    <label>Name:</label>
-                                                    <input type="text" class="form-control" name="name" required="1">
-                                                </div>
-                                                <div class="form-group col">
-                                                    <label>Email:</label>
-                                                    <input type="email" class="form-control" name="email" required="1">
-                                                </div>
+                                            <div class="form-group">
+                                                <label>Name:</label>
+                                                <input type="text" class="form-control" name="name" required="1">
                                             </div>
-                                            <div class="row">
-                                                <div class="form-group col">
-                                                    <label>Phone:</label>
-                                                    <input type="number" class="form-control" name="phone" required="1">
-                                                </div>
-                                                <div class="form-group col">
-                                                    <label>Location:</label>
-                                                    <input type="text" class="form-control" name="location" required="1">
-                                                </div>
+                                            <div class="form-group">
+                                                <label>Email:</label>
+                                                <input type="email" class="form-control" name="email" required="1">
                                             </div>
-                                            <div class="row">
-                                                <div class="form-group col">
-                                                    <label>Type:</label>
-                                                    <input type="text" class="form-control" name="type" required="1">
-                                                </div>
-                                                <div class="form-group col">
-                                                    <label>Cluster:</label>
-                                                    <input type="text" class="form-control" name="cluster" required="1">
-                                                </div>
+                                            <div class="form-group">
+                                                <label>Phone:</label>
+                                                <input type="number" class="form-control" name="phone" required="1">
                                             </div>
-                                            <div class="row">
-                                                <div class="form-group col">
-                                                    <label>Se:</label>
-                                                    <input type="text" class="form-control" name="se" required="1">
-                                                </div>
-                                                <div class="form-group col">
-                                                    <label>Status:</label>
-                                                    <input type="text" class="form-control" name="status" required="1">
-                                                </div>
+                                            <div class="form-group">
+                                                <label>Location:</label>
+                                                <input type="text" class="form-control" name="location" required="1">
                                             </div>
-                                            <div class="form-group col">
-                                                <button class="btn btn-primary" type="submit">Add New Lead</button>
+                                            <div class="form-group">
+                                                <label>Type:</label>
+                                                <input type="text" class="form-control" name="type" required="1">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Cluster:</label>
+                                                <input type="text" class="form-control" name="cluster" required="1">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Se:</label>
+                                                <input type="text" class="form-control" name="se" required="1">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Status:</label>
+                                                <input type="text" class="form-control" name="status" required="1">
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn btn-primary" type="submit">Add Employee</button>
                                             </div>
                                         </form>
                                     </div>
@@ -132,46 +124,38 @@
                                     </div>
                                     <div class="modal-body">
                                         <form action="{{url_for('update')}}" method="POST">
-                                            <div class="row">
-                                                <div class="form-group col">
-                                                    <label>Name:</label>
-                                                    <input type="hidden" name="id" value="{{row.id}}">
-                                                    <input type="text" class="form-control" name="name" value="{{row.name}}"  required="1">
-                                                </div>
-                                                <div class="form-group col">
-                                                    <label>Email:</label>
-                                                    <input type="email" class="form-control" name="email"  value="{{row.email}}" required="1">
-                                                </div>
+                                            <div class="form-group">
+                                                <label>Name:</label>
+                                                <input type="hidden" name="id" value="{{row.id}}">
+                                                <input type="text" class="form-control" name="name" value="{{row.name}}"  required="1">
                                             </div>
-                                            <div class="row">
-                                                <div class="form-group col">
-                                                    <label>Phone:</label>
-                                                    <input type="number" class="form-control" name="phone"  value="{{row.phone}}" required="1">
-                                                </div>
-                                                <div class="form-group col">
-                                                    <label>Location:</label>
-                                                    <input type="text" class="form-control" name="location"  value="{{row.location}}" required="1">
-                                                </div>
+                                            <div class="form-group">
+                                                <label>Email:</label>
+                                                <input type="email" class="form-control" name="email"  value="{{row.email}}" required="1">
                                             </div>
-                                            <div class="row">
-                                                <div class="form-group col">
-                                                    <label>Type:</label>
-                                                    <input type="text" class="form-control" name="type"  value="{{row.type}}" required="1">
-                                                </div>
-                                                <div class="form-group col">
-                                                    <label>Cluster:</label>
-                                                    <input type="text" class="form-control" name="cluster"  value="{{row.cluster}}" required="1">
-                                                </div>
+                                            <div class="form-group">
+                                                <label>Phone:</label>
+                                                <input type="number" class="form-control" name="phone"  value="{{row.phone}}" required="1">
                                             </div>
-                                            <div class="row">
-                                                <div class="form-group col">
-                                                    <label>Se:</label>
-                                                    <input type="text" class="form-control" name="se"  value="{{row.se}}" required="1">
-                                                </div>
-                                                <div class="form-group col">
-                                                    <label>Status:</label>
-                                                    <input type="text" class="form-control" name="status"  value="{{row.status}}" required="1">
-                                                </div>
+                                            <div class="form-group">
+                                                <label>Location:</label>
+                                                <input type="text" class="form-control" name="location"  value="{{row.location}}" required="1">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Type:</label>
+                                                <input type="text" class="form-control" name="type"  value="{{row.type}}" required="1">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Cluster:</label>
+                                                <input type="text" class="form-control" name="cluster"  value="{{row.cluster}}" required="1">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Se:</label>
+                                                <input type="text" class="form-control" name="se"  value="{{row.se}}" required="1">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Status:</label>
+                                                <input type="text" class="form-control" name="status"  value="{{row.status}}" required="1">
                                             </div>
                                             <div class="form-group">
                                                 <button class="btn btn-primary" type="submit">Update</button>
